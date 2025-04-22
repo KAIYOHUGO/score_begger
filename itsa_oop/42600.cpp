@@ -1,19 +1,18 @@
 #include <math.h>
-#include <stdio.h>
+#include <iostream>
 #include <stdint.h>
 
 int main() {
   unsigned int n;
-  scanf("%u", &n);
+  std::cin >> n;
   while (n--) {
     uint32_t i;
-    scanf("%u", &i);
+    std::cin >> i;
     if (i <= 31) {
-      printf("%u\n", 1U << i);
+      std::cout << (1U << i) << std::endl;
       continue;
     }
-    printf("Value of more than 31\n");
+    std::cout << "Value of more than 31" << std::endl;
   }
   return 0;
 }
-

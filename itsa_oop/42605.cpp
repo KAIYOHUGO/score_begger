@@ -1,11 +1,9 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
 
 int main() {
   unsigned int n;
-  scanf("%u", &n);
-  printf("%u\n", (n * 1000 + 237) / 238);
+  std::cin >> n;
+  std::cout << (n * 1000 + 237) / 238 << std::endl;
   return 0;
 }
-

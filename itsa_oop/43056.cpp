@@ -1,10 +1,8 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
 
 int main() {
   char a, b, c, d;
-  scanf("%c%c%c%c", &a, &b, &c, &d);
-  printf("%c,%c,%c,%c\n", d, c, b, a);
+  std::cin >> a >> b >> c >> d;
+  std::cout << d << "," << c << "," << b << "," << a << std::endl;
   return 0;
 }

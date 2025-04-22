@@ -1,6 +1,8 @@
-#include <math.h>
-#include <stdio.h>
+#include <iostream>
+#include <cmath>
 #include <stdint.h>
+
+using namespace std;
 
 uint64_t fac(uint64_t n) {
   if (n == 0) {
@@ -11,12 +13,11 @@ uint64_t fac(uint64_t n) {
 
 int main() {
   unsigned int n;
-  scanf("%u", &n);
+  cin >> n;
   while (n--) {
     unsigned int x;
-    scanf("%u", &x);
-    printf("%llu\n", fac(x));
+    cin >> x;
+    cout << fac(x) << endl;
   }
   return 0;
 }
-

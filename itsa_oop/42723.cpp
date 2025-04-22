@@ -1,17 +1,15 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
 
 int main() {
   int n;
-  scanf("%d", &n);
+  std::cin >> n;
   if (n < 0) {
-    printf("負數\n");
+    std::cout << "負數\n";
   } else if (n > 0) {
-    printf("正數\n");
+    std::cout << "正數\n";
   } else {
-    printf("0\n");
+    std::cout << "0\n";
   }
   return 0;
 }
-

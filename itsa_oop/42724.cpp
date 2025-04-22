@@ -1,10 +1,9 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
 
 int main() {
   char a;
-  scanf("%c", &a);
+  std::cin >> a;
   a = a <= 'Z' ? a - 'A' + 'a' : a;
   switch (a) {
   case 'a':
@@ -12,12 +11,11 @@ int main() {
   case 'i':
   case 'o':
   case 'u':
-    printf("母音\n");
+    std::cout << "母音\n";
     break;
   default:
-    printf("子音\n");
+    std::cout << "子音\n";
     break;
   }
   return 0;
 }
-

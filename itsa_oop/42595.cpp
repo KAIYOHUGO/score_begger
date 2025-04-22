@@ -1,15 +1,16 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
+#include <cstdint>
+
+using namespace std;
 
 int main() {
   int n;
-  scanf("%d", &n);
+  cin >> n;
   while (n--) {
     int a, b;
-    scanf("%d %d", &a, &b);
-    printf("%d\n", a + b);
+    cin >> a >> b;
+    cout << a + b << endl;
   }
   return 0;
 }
-

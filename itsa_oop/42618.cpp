@@ -1,21 +1,20 @@
 #include <math.h>
-#include <stdio.h>
+#include <iostream>
 #include <stdint.h>
 
 int main() {
   unsigned int n;
-  scanf("%u", &n);
+  std::cin >> n;
   while (n--) {
     uint64_t x, y;
-    scanf("%lu %lu", &x, &y);
+    std::cin >> x >> y;
     if (x > y) {
       uint64_t t = y;
       y = x;
       x = t;
     }
-    printf("%lu\n", (y * (y + 1) - x * (x - 1)) / 2);
+    std::cout << (y * (y + 1) - x * (x - 1)) / 2 << std::endl;
   }
 
   return 0;
 }
-

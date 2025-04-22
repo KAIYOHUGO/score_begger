@@ -1,15 +1,15 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
+
+using namespace std;
 
 int main() {
-  unsigned int n;
-  scanf("%u", &n);
-  while (n--) {
-    int x, y;
-    scanf("%d %d", &x, &y);
-    printf("%u\n", (unsigned int)((x + y) * (x + y)));
-  }
-  return 0;
+    unsigned int n;
+    cin >> n;
+    while (n--) {
+        int x, y;
+        cin >> x >> y;
+        cout << static_cast<unsigned int>((x + y) * (x + y)) << endl;
+    }
+    return 0;
 }
-

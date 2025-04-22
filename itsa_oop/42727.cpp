@@ -1,10 +1,10 @@
 #include <math.h>
-#include <stdio.h>
+#include <iostream>
 #include <stdint.h>
 
 int main() {
   unsigned int n;
-  scanf("%u", &n);
+  std::cin >> n;
   unsigned int ans;
   if (n >= 100) {
     ans = n * 70;
@@ -15,7 +15,6 @@ int main() {
   } else {
     ans = n * 100;
   }
-  printf("%u\n", ans);
+  std::cout << ans << std::endl;
   return 0;
 }
-

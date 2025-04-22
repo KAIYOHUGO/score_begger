@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-  unsigned int w, h;
-  scanf("%u %u", &w, &h);
-  double ans = (double)w * (double)h / 2.0;
-  printf("Triangle area:%.1f\n", ans);
-  return 0;
+    unsigned int w, h;
+    cin >> w >> h;
+    double ans = static_cast<double>(w) * static_cast<double>(h) / 2.0;
+    cout << "Triangle area:" << fixed;
+    cout.precision(1);
+    cout << ans << endl;
+    return 0;
 }
-

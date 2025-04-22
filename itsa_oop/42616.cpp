@@ -1,15 +1,13 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
 
 int main() {
   int a;
-  scanf("%d", &a);
+  std::cin >> a;
   for (unsigned int i = 0; i < 8; i++) {
-    printf("%d", (a & (1 << 7)) != 0);
+    std::cout << ((a & (1 << 7)) != 0);
     a <<= 1;
   }
-  printf("\n");
+  std::cout << "\n";
   return 0;
 }
-

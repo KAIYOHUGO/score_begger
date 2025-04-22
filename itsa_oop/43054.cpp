@@ -1,11 +1,9 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cstring>
 
 int main() {
   char name[100];
-  scanf("%s", name);
-  printf("Hello %s\n", name);
+  std::cin >> name;
+  std::cout << "Hello " << name << std::endl;
   return 0;
 }
-

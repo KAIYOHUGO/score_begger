@@ -1,11 +1,9 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-  unsigned int a;
-  scanf("%u", &a);
-  printf("%u\n", a / 3 * (a / 3 + 1) * 3 / 2);
-  return 0;
+    unsigned int a;
+    cin >> a;
+    cout << (a / 3 * (a / 3 + 1) * 3 / 2) << endl;
+    return 0;
 }
-

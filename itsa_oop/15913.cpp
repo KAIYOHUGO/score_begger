@@ -1,6 +1,5 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+using namespace std;
 
 int gcd(int a, int b) {
   if (a == 0) {
@@ -11,8 +10,7 @@ int gcd(int a, int b) {
 
 int main() {
   int a, b;
-  scanf("%d %d", &a, &b);
-  printf("%d\n", gcd(a, b));
+  cin >> a >> b;
+  cout << gcd(a, b) << endl;
   return 0;
 }
-

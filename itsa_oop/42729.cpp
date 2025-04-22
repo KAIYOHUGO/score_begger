@@ -1,18 +1,16 @@
 #include <limits.h>
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <cmath>
+#include <iostream>
 
 int main() {
   unsigned int n;
-  scanf("%u", &n);
+  std::cin >> n;
   int m = INT_MIN;
   while (n--) {
     int x;
-    scanf("%d", &x);
+    std::cin >> x;
     m = m > x ? m : x;
   }
-  printf("%d\n", m);
+  std::cout << m << std::endl;
   return 0;
 }
-

@@ -1,17 +1,17 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
 
 int main() {
   int n;
-  scanf("%d", &n);
+  std::cin >> n;
+  bool first = true;
   for (int i = 1; i <= n; i += 2) {
-    if (i != 1) {
-      printf(" ");
+    if (!first) {
+      std::cout << " ";
     }
-    printf("%d", i);
+    std::cout << i;
+    first = false;
   }
-  printf("\n");
+  std::cout << "\n";
   return 0;
 }
-

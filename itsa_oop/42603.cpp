@@ -1,15 +1,13 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
 
 int main() {
   int n;
-  scanf("%d", &n);
-  printf("NT10=%d\n", n / 10);
+  std::cin >> n;
+  std::cout << "NT10=" << n / 10 << std::endl;
   n %= 10;
-  printf("NT5=%d\n", n / 5);
-  printf("NT1=%d\n", n % 5);
+  std::cout << "NT5=" << n / 5 << std::endl;
+  std::cout << "NT1=" << n % 5 << std::endl;
 
   return 0;
 }
-

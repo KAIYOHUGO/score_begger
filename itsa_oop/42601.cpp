@@ -1,11 +1,10 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
 
 int main() {
   int mi;
-  scanf("%d", &mi);
-  printf("km=%.1f\n", round((double)mi * 1.6 * 10.0) / 10.0);
+  cin >> mi;
+  cout << "km=" << round((double)mi * 1.6 * 10.0) / 10.0 << endl;
   return 0;
 }
-

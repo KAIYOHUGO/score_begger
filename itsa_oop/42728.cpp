@@ -1,15 +1,13 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+using namespace std;
 
 int main() {
   unsigned int n;
-  scanf("%u", &n);
+  cin >> n;
   while (n--) {
     unsigned int x;
-    scanf("%u", &x);
-    printf("%u\n", 50 <= x && x <= 70 ? x : 100);
+    cin >> x;
+    cout << (50 <= x && x <= 70 ? x : 100) << endl;
   }
   return 0;
 }
-

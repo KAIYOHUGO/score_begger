@@ -1,11 +1,11 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-  unsigned int a, b, c;
-  scanf("%u %u %u", &a, &b, &c);
-  printf("Trapezoid area:%.1f\n", ((double)a + (double)b) * (double)c / 2.0);
-  return 0;
+    unsigned int a, b, c;
+    cin >> a >> b >> c;
+    cout << "Trapezoid area:" << fixed;
+    cout.precision(1);
+    cout << ((double)a + (double)b) * (double)c / 2.0 << endl;
+    return 0;
 }
-

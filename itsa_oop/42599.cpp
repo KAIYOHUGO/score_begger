@@ -1,15 +1,14 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdint.h>
+#include <iostream>
+#include <cmath>
+#include <cstdint>
 
 int main() {
   unsigned int n;
-  scanf("%u", &n);
+  std::cin >> n;
   while (n--) {
     uint64_t m;
-    scanf("%lu", &m);
-    printf("%lu %lu %lu\n", m, m * m, m * m * m);
+    std::cin >> m;
+    std::cout << m << " " << m * m << " " << m * m * m << std::endl;
   }
   return 0;
 }
-
